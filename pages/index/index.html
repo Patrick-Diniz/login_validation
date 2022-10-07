@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Index</title>
+  </head>
+  <body>
+    <form id="form" defer>
+      <h2 class="form_title">Sign In</h2>
+
+      <div class="inputs">
+        <label for="user">Usuário:</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Digite seu usuário:"
+        />
+      </div>
+
+      <div class="inputs">
+        <label for="password">Senha:</label>
+        <input
+          id="password"
+          type="password"
+          name="password"
+          placeholder="Digite sua senha:"
+        />
+      </div>
+
+      <input
+        class="form_submit"
+        type="submit"
+        value="login"
+        onclick="logar(); return false"
+      />
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
