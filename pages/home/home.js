@@ -7,5 +7,5 @@ userText.textContent = userName;
 function logout() {
     localStorage.clear();
     
-    location.href = "../index/index.html";
+    location.href = "../../index.html";
 }
