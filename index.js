@@ -5,7 +5,7 @@ function logar() {
 
     if(user == "admin") {
         alert("Sucesso");
-        location.href = "../home/home.html"
+        location.href = "pages/home/home.html"
     } else {
         alert("Usuário incorreto");
         localStorage.clear();

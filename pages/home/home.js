@@ -5,7 +5,7 @@ let userText = document.querySelector("#username");
 userText.textContent = userName;
 
 function logout() {
-    localStorage.clear();
+    location.href = "../../index.html";
     
-    location.href = "../index/index.html";
+    localStorage.clear();
 }
