@@ -14,12 +14,30 @@ body {
   width: 100%;
   height: 100vh;
 
+  display: flex;
+
   background: #201b2c;
 }
 
-/* Header */
+.aside_bar {
+  width: 30%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  background: red;
+}
+
+.main_section {
+  width: 70%;
+  background: blue;
+}
+
 .header {
-  width: 100%;
+  display: flex;
+  top: 0;
 
   background: #201b2c;
 
@@ -28,11 +46,43 @@ body {
   align-items: center;
   flex-direction: row;
 
-  position: fixed;
-
   padding: 1rem 2rem;
 }
 
+
+/* Aside Bar */
+.aside_contents {
+  width: 80%;
+
+  margin-top: 2rem;
+
+  background: green;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.aside_contents_logos{
+  width: 30px;
+  height: 30px;
+}
+
+.aside_dashboard, .aside_profiles {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: fle;
+  gap: 1rem;
+  padding: 1rem;
+background: yellow;
+}
+
+
+
+/* Header */
 .header_title {
   font-size: 2rem;
   color: #f3f2f7;
@@ -41,6 +91,10 @@ body {
 .header_user {
   font-size: 1.8rem;
   color: #5dc996;
+}
+
+.header_logo_img {
+  cursor: pointer;
 }
 
 .header_info {
