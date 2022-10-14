@@ -154,10 +154,15 @@ input[type="password"] {
   .left_side {
     height: 40%;
     margin-bottom: 2rem;
+
+    height: 50vh;
+  }
+
+  .right_side {
+    height: 50vh;
   }
 
   .form {
     width: 80%;
-    height: 30vh;
   }
 }
