@@ -152,10 +152,8 @@ input[type="password"] {
   }
 
   .left_side {
-    height: 40%;
-    margin-bottom: 0.5rem;
-
-    height: 50vh;
+    height: 35%;
+    height: 45vh;
   }
 
   .right_side {
