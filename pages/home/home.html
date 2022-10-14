@@ -5,16 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./home.css">
+    <script src="./home.js" defer></script>
     <title>Home</title>
 </head>
 <body>
-    <div class="container" id="home">
-        <h2>Seja bem vindo</h2>
-        <h3 id="username"></h3>
-    
-        <button class="logout_btn" id="logout" onclick="logout()">Logout</input>
-      </div>
+    <header class="header" id="home">
+        <div class="header_info">
+            <h1 class="header_title">Seja bem vindo</h1>
+            <h2 class="header_user" id="username"></h2>
+        </div>
 
-      <script src="./home.js"></script>
+        <div class="header_logo">
+            <img src="../../src/img/admin.png" c alt="" class="header_logo_img">
+        </div>
+        
+        <div class="header_button">
+            <button class="logout_btn" id="logout" onclick="logout()">Logout</input>
+        </div>
+      </header>
+
 </body>
 </html>

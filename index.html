@@ -5,39 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
     <title>Index</title>
   </head>
   <body>
-    <form id="form" defer>
-      <h2 class="form_title">Sign In</h2>
-
-      <div class="inputs">
-        <label for="user">Usuário:</label>
-        <input
-          id="user"
-          type="text"
-          name="user"
-          placeholder="Digite seu usuário:"
-        />
-      </div>
-
-      <div class="inputs">
-        <label for="password">Senha:</label>
-        <input
-          id="password"
-          type="password"
-          name="password"
-          placeholder="Digite sua senha:"
-        />
-      </div>
-
-      <input
-        class="form_submit"
-        type="submit"
-        value="login"
-        onclick="logar(); return false"
+    <div class="left_side">
+      <img
+        src="./src/img/computer-troubleshooting-animate.svg"
+        class="left_side_img"
+        alt=""
       />
-    </form>
-    <script src="./index.js"></script>
+    </div>
+
+    <div class="right_side">
+      <form id="form" defer>
+        <h1 class="form_title">Login</h1>
+
+        <div class="inputs">
+          <label for="user">Usuário</label>
+          <input
+            id="user"
+            type="text"
+            name="user"
+            placeholder="Digite seu usuário:"
+          />
+        </div>
+
+        <div class="inputs">
+          <label for="password">Senha</label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Digite sua senha:"
+          />
+        </div>
+
+        <input
+          class="form_submit"
+          type="submit"
+          value="Login"
+          onclick="logar(); return false"
+        />
+      </form>
+    </div>
   </body>
 </html>
