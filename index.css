@@ -43,8 +43,8 @@ body {
 }
 
 /* Form Sign In*/
-form {
-  width: 55%;
+.form {
+  width: 75%;
 
   padding: 1.5rem;
 
@@ -125,4 +125,37 @@ input[type="password"] {
 
 .form_submit:hover {
   background: #70eeb3;
+}
+
+/* Breakpoints */
+@media (max-width: 920px) {
+  body {
+    flex-direction: row;
+  }
+  .left_side,
+  .right_side {
+    width: 50%;
+  }
+
+  .form {
+    width: 65%;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+  .left_side,
+  .right_side {
+    width: 100%;
+  }
+
+  .left_side {
+    height: 40%;
+  }
+
+  .form {
+    width: 80%;
+  }
 }
