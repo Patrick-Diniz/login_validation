@@ -128,6 +128,14 @@ input[type="password"] {
 }
 
 /* Breakpoints */
+@media (min-width: 921px) {
+  .form{
+    width: 50%;
+  }
+}
+
+
+
 @media (max-width: 920px) {
   body {
     flex-direction: row;
@@ -138,7 +146,7 @@ input[type="password"] {
   }
 
   .form {
-    width: 65%;
+    width: 60%;
   }
 }
 
@@ -152,15 +160,15 @@ input[type="password"] {
   }
 
   .left_side {
-    height: 35%;
-    height: 45vh;
+    height: 40vh;
   }
 
   .right_side {
     height: 50vh;
+    align-items: flex-start;
   }
 
   .form {
-    width: 80%;
+    width: 70%;
   }
 }
