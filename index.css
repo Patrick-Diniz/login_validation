@@ -29,8 +29,8 @@ body {
 }
 
 .left_side_img {
-  width: 80%;
-  height: 80%;
+  width: 75%;
+  height: 75%;
 }
 
 /* Right Side */
@@ -44,7 +44,7 @@ body {
 
 /* Form Sign In*/
 .form {
-  width: 75%;
+  width: 65%;
 
   padding: 1.5rem;
 
@@ -153,9 +153,11 @@ input[type="password"] {
 
   .left_side {
     height: 40%;
+    margin-bottom: 2rem;
   }
 
   .form {
     width: 80%;
+    height: 30vh;
   }
 }
