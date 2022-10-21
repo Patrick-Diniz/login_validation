@@ -129,12 +129,10 @@ input[type="password"] {
 
 /* Breakpoints */
 @media (min-width: 921px) {
-  .form{
+  .form {
     width: 50%;
   }
 }
-
-
 
 @media (max-width: 920px) {
   body {
