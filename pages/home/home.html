@@ -1,80 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./break.css">
-    <link rel="stylesheet" href="./home.css">
-    <script src="./home.js" defer></script>
-    <script src="https://kit.fontawesome.com/703937a09c.js" crossorigin="anonymous"></script>
-    <title>Home</title>
-</head>
-<body>
-    <aside class="aside_bar">
-        <div class="aside_contents">
-            <div class="aside_logo">
-                <i class="fa-solid fa-bars fa-2x"></i>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="home.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="bx bxl-c-plus-plus icon"></i>
+        <div class="logo_name">CodingLab</div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Search..." />
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-user"></i>
+            <span class="links_name">User</span>
+          </a>
+          <span class="tooltip">User</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-chat"></i>
+            <span class="links_name">Messages</span>
+          </a>
+          <span class="tooltip">Messages</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-pie-chart-alt-2"></i>
+            <span class="links_name">Analytics</span>
+          </a>
+          <span class="tooltip">Analytics</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-folder"></i>
+            <span class="links_name">File Manager</span>
+          </a>
+          <span class="tooltip">Files</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cart-alt"></i>
+            <span class="links_name">Order</span>
+          </a>
+          <span class="tooltip">Order</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-heart"></i>
+            <span class="links_name">Saved</span>
+          </a>
+          <span class="tooltip">Saved</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="links_name">Setting</span>
+          </a>
+          <span class="tooltip">Setting</span>
+        </li>
+        <li class="profile">
+          <div class="profile-details">
+            <!--<img src="profile.jpg" alt="profileImg">-->
+            <div class="name_job">
+              <div class="name">Prem Shahi</div>
+              <div class="job">Web designer</div>
             </div>
+          </div>
+          <i class="bx bx-log-out" id="log_out"></i>
+        </li>
+      </ul>
+    </div>  
 
-            <div class="aside_dashboard">
-                <a href="#">
-                    <i class="fa-solid fa-table-columns fa-2x"></i>
-                    <span>Dashboard</span>
-                </a>
-            </div>
-            
-            <div class="aside_profiles">
-                <a href="#">
-                    <i class="fa-regular fa-user fa-2x"></i>
-                    <span>Profiles</span>
-                </a>
-            </div>
-
-            <div class="aside_messages">
-                <a href="#">
-                    <i class="fa-regular fa-comments fa-2x"></i>
-                    <span>Messages</span>
-                </a>
-            </div>
-
-            <div class="aside_archives">
-                <a href="#">
-                    <i class="fa-regular fa-folder-open fa-2x"></i>
-                    <span>Archives</span>
-                </a>
-            </div>
-
-            <div class="aside_settings">
-                <a href="#">
-                    <i class="fa-solid fa-gear fa-2x"></i>
-                    <span>Settings</span>
-                </a>
-            </div>
-        </div>
-    </aside>
-
-    <div class="main_section">
+</div>
+<section class="home-section">
     <header class="header" id="home">
-        <div class="header_info">
+        <div class="header_info"> 
+            
             <h1 class="header_title">Seja bem vindo</h1>
-            <h2 class="header_user" id="username"></h2>
-        </div>
 
-        <a href="./home.html" class="header_logo_link">
-            <div class="header_logo">
-                <img src="../../src/img/admin.png" c alt="" class="header_logo_img">
+            <div class="header_user_info">
+                <div class="user_img">
+                    <img src="../../src/img/admin.png">
+                </div>
+                <h2 class="header_user" id="username"></h2>
             </div>
-        </a>
-        
-        <div class="header_button">
-            <button class="logout_btn" id="logout" onclick="logout()">Logout</input>
-        </div>
-      </header>
 
-        <main>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequatur similique praesentium nulla quae quidem suscipit ut officia sed, recusandae inventore! Saepe tenetur, optio adipisci dolor illo similique quos dolorum.</h1>
-        </main>
-    </div>
-</body>
+        </div>
+
+        <button class="logout_btn" id="logout" onclick="logout()">Logout</input>
+    </header>
+
+    <main>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequatur similique
+            praesentium nulla quae quidem suscipit ut officia sed, recusandae inventore! Saepe tenetur, optio
+            adipisci dolor illo similique quos dolorum.</h1>
+    </main>
+</section>  
+    <script src="home.js"></script>
+  </body>
 </html>
+
+<!--         </div>
+        <section class="home-section">
+            <header class="header" id="home">
+                <div class="header_info">
+                    <h1 class="header_title">Seja bem vindo</h1>
+                    <h2 class="header_user" id="username"></h2>
+                </div>
+
+                <a href="./home.html" class="header_logo_link">
+                    <div class="header_logo">
+                        <img src="../../src/img/admin.png" c alt="" class="header_logo_img">
+                    </div>
+                </a>
+
+                <div class="header_button">
+                    <button class="logout_btn" id="logout" onclick="logout()">Logout</input>
+                </div>
+            </header>
+
+            <main>
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequatur similique
+                    praesentium nulla quae quidem suscipit ut officia sed, recusandae inventore! Saepe tenetur, optio
+                    adipisci dolor illo similique quos dolorum.</h1>
+            </main>
+        </section>-->
