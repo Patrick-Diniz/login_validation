@@ -45,25 +45,12 @@
         </li>
         <li>
           <a href="#">
-            <i class="bx bx-pie-chart-alt-2"></i>
-            <span class="links_name">Analytics</span>
-          </a>
-          <span class="tooltip">Analytics</span>
-        </li>
-        <li>
-          <a href="#">
             <i class="bx bx-folder"></i>
             <span class="links_name">File Manager</span>
           </a>
           <span class="tooltip">Files</span>
         </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-cart-alt"></i>
-            <span class="links_name">Order</span>
-          </a>
-          <span class="tooltip">Order</span>
-        </li>
+
         <li>
           <a href="#">
             <i class="bx bx-heart"></i>
@@ -78,15 +65,23 @@
           </a>
           <span class="tooltip">Setting</span>
         </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-exit' onclick="logout()"></i>
+            <span class="links_name">Logout</span>
+          </a>
+          <span class="tooltip">Logout</span>
+        </li>
         <li class="profile">
           <div class="profile-details">
             <!--<img src="profile.jpg" alt="profileImg">-->
             <div class="name_job">
-              <div class="name">Prem Shahi</div>
-              <div class="job">Web designer</div>
+              <div class="name">Patrick Diniz</div>
+              <div class="job">Front-end Developer</div>
             </div>
+              <i class="bx bx-code-alt" id="creator_user"></i>
           </div>
-          <i class="bx bx-log-out" id="log_out"></i>
+
         </li>
       </ul>
     </div>  
@@ -98,19 +93,16 @@
             
             <h1 class="header_title">Seja bem vindo</h1>
 
-            <div class="header_user_info">
-                <div class="user_img">
-                    <img src="../../src/img/admin.png">
-                </div>
-                <h2 class="header_user" id="username"></h2>
-            </div>
-
-        </div>
-
-        <button class="logout_btn" id="logout" onclick="logout()">Logout</input>
+          </div>
+          <div class="header_user_info">
+              <div class="user_img">
+                <i class='bx bx-user bx-sm'style='color:#77ffc0' ></i>
+              </div>
+              <h2 class="header_user" id="username"></h2>
+          </div>
     </header>
 
-    <main>
+    <main class="main_section">
         <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequatur similique
             praesentium nulla quae quidem suscipit ut officia sed, recusandae inventore! Saepe tenetur, optio
             adipisci dolor illo similique quos dolorum.</h1>
